@@ -18,7 +18,7 @@
         </Menu>
 
         <StackPanel DockPanel.Dock="Left" Width="200">
-            <TreeView>
+            <TreeView Height="400">
                 <TreeViewItem Header="Employee1" IsSelected="True">
                     <TreeViewItem Header="Jesper Aaberg"/>
                     <TreeViewItem Header="Employee Number">
@@ -42,8 +42,27 @@
                     </TreeViewItem>
                 </TreeViewItem>
             </TreeView>
+
+            <Button Content="关于我" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
         </StackPanel>
-        <Button Content="关于我" HorizontalAlignment="Left" Margin="470,83,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <ListBox>
+                <ListBoxItem>
+                    <TextBox>thanks</TextBox>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox Grid.Column="2"> 
+                <ListBoxItem>
+                    <TextBox>sdf</TextBox>
+                </ListBoxItem>
+            </ListBox>
+        </Grid>
+
 
 
     </DockPanel>
