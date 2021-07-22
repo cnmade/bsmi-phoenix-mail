@@ -16,6 +16,33 @@
                 <MenuItem Header="_Exit" />
             </MenuItem>
         </Menu>
+
+        <StackPanel DockPanel.Dock="Left" Width="200">
+            <TreeView>
+                <TreeViewItem Header="Employee1" IsSelected="True">
+                    <TreeViewItem Header="Jesper Aaberg"/>
+                    <TreeViewItem Header="Employee Number">
+                        <TreeViewItem Header="12345"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Work Days">
+                        <TreeViewItem Header="Monday"/>
+                        <TreeViewItem Header="Tuesday"/>
+                        <TreeViewItem Header="Thursday"/>
+                    </TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem Header="Employee2">
+                    <TreeViewItem Header="Dominik Paiha"/>
+                    <TreeViewItem Header="Employee Number">
+                        <TreeViewItem Header="98765"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Work Days">
+                        <TreeViewItem Header="Tuesday"/>
+                        <TreeViewItem Header="Wednesday"/>
+                        <TreeViewItem Header="Friday"/>
+                    </TreeViewItem>
+                </TreeViewItem>
+            </TreeView>
+        </StackPanel>
         <Button Content="关于我" HorizontalAlignment="Left" Margin="470,83,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
 
