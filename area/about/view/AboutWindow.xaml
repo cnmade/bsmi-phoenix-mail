@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:bsmi_phoenix_mail.area.about.view"
         mc:Ignorable="d"
-        Title="关于本软件" Height="240" Width="320" HorizontalAlignment="Center" VerticalAlignment="Center">
+        Title="关于本软件" Height="450" Width="600" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
     <Grid HorizontalAlignment="Center">
         <Label Content="BSMI 凤凰邮件客户端" HorizontalAlignment="Left" Margin="42,32,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="42,73,0,0" Text="我们是凤凰邮件" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
