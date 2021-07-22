@@ -26,23 +26,23 @@
             </Grid.ColumnDefinitions>
 
             <TreeView Height="auto" Grid.Column="0">
-                <TreeViewItem Header="Employee1" IsSelected="True">
+                <TreeViewItem Header="Employee1" IsSelected="True" IsExpanded="True">
                     <TreeViewItem Header="Jesper Aaberg"/>
-                    <TreeViewItem Header="Employee Number">
+                    <TreeViewItem Header="Employee Number" IsExpanded="True">
                         <TreeViewItem Header="12345"/>
                     </TreeViewItem>
-                    <TreeViewItem Header="Work Days">
+                    <TreeViewItem Header="Work Days" IsExpanded="True">
                         <TreeViewItem Header="Monday"/>
                         <TreeViewItem Header="Tuesday"/>
                         <TreeViewItem Header="Thursday"/>
                     </TreeViewItem>
                 </TreeViewItem>
-                <TreeViewItem Header="Employee2">
+                <TreeViewItem Header="Employee2" IsExpanded="True">
                     <TreeViewItem Header="Dominik Paiha"/>
-                    <TreeViewItem Header="Employee Number">
+                    <TreeViewItem Header="Employee Number" IsExpanded="True">
                         <TreeViewItem Header="98765"/>
                     </TreeViewItem>
-                    <TreeViewItem Header="Work Days">
+                    <TreeViewItem Header="Work Days" IsExpanded="True">
                         <TreeViewItem Header="Tuesday"/>
                         <TreeViewItem Header="Wednesday"/>
                         <TreeViewItem Header="Friday"/>
