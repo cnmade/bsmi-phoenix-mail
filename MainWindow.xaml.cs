@@ -31,5 +31,10 @@ namespace bsmi_phoenix_mail
             AboutWindow aw = new AboutWindow();
             aw.Show();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            cfrm.Navigate(new AboutUs());
+        }
     }
 }

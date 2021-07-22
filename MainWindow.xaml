@@ -51,12 +51,12 @@
             </TreeView>
             <ListBox Grid.Column="1">
                 <ListBoxItem>
-                    <TextBox>thanks</TextBox>
+                    <Button Click="Button_Click_1">thanks</Button>
                 </ListBoxItem>
             </ListBox>
-            <ListBox Grid.Column="2"> 
+            <ListBox Grid.Column="2">
                 <ListBoxItem>
-                    <TextBox>sdf</TextBox>
+                    <Frame Content="Frame" Name="cfrm" NavigationUIVisibility="Hidden"/>
                 </ListBoxItem>
             </ListBox>
         </Grid>
