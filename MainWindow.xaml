@@ -8,12 +8,10 @@
         Title="MainWindow" Height="900" Width="1600">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="_New" />
-                <MenuItem Header="_Open" />
-                <MenuItem Header="_Save" />
+            <MenuItem Header="_文件">
+                <MenuItem Header="_设置" Click="OpenSettings"/>
                 <Separator />
-                <MenuItem Header="_Exit" />
+                <MenuItem Header="_退出" Click="ExitApp" />
             </MenuItem>
         </Menu>
 
@@ -51,7 +49,7 @@
             </TreeView>
             <ListBox Grid.Column="1">
                 <ListBoxItem>
-                    <Button Click="Button_Click_1">thanks</Button>
+                    <Button Click="Button_Click_1">打开邮件</Button>
                 </ListBoxItem>
             </ListBox>
             <ListBox Grid.Column="2">

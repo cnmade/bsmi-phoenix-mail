@@ -1,4 +1,5 @@
 ﻿using bsmi_phoenix_mail.area.about.view;
+using bsmi_phoenix_mail.area.setting.view;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,19 @@ namespace bsmi_phoenix_mail
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             cfrm.Navigate(new AboutUs());
+        }
+
+        private void OpenSettings(object sender, RoutedEventArgs e)
+        {
+            AllSetting asw = new AllSetting();
+            asw.Show();
+            
+        }
+
+        private void ExitApp(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+
         }
     }
 }
