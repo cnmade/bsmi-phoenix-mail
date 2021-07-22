@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:bsmi_phoenix_mail"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="900" Width="1600">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
@@ -17,8 +17,15 @@
             </MenuItem>
         </Menu>
 
-        <StackPanel DockPanel.Dock="Left" Width="200">
-            <TreeView Height="400">
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+
+            <TreeView Height="auto" Grid.Column="0">
                 <TreeViewItem Header="Employee1" IsSelected="True">
                     <TreeViewItem Header="Jesper Aaberg"/>
                     <TreeViewItem Header="Employee Number">
@@ -42,16 +49,7 @@
                     </TreeViewItem>
                 </TreeViewItem>
             </TreeView>
-
-            <Button Content="关于我" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
-        </StackPanel>
-        <Grid>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="2*" />
-            </Grid.ColumnDefinitions>
-            <ListBox>
+            <ListBox Grid.Column="1">
                 <ListBoxItem>
                     <TextBox>thanks</TextBox>
                 </ListBoxItem>
