@@ -24,5 +24,11 @@ namespace bsmi_phoenix_mail.area.about.view
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AboutWindow wx = new AboutWindow();
+            wx.Show();
+        }
     }
 }
